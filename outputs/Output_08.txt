@@ -1,0 +1,32 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 08: GRAPH TRAVERSALS (DFS & BFS) BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter number of vertices and edges: 5 6
+Enter 6 edges (u v):
+0 1
+0 2
+1 3
+1 4
+2 4
+3 4
+Enter starting node for traversals (0 to 4): 0
+
+----------------------------------------------------------------------
+GRAPH TRAVERSAL RESULTS
+----------------------------------------------------------------------
+DFS Traversal starting from node 0 : [ 0, 1, 3, 4, 2 ]
+DFS Execution Time: 3 us
+
+BFS Traversal starting from node 0 : [ 0, 1, 2, 3, 4 ]
+BFS Execution Time: 2 us
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

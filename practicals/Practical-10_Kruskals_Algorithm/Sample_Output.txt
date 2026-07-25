@@ -1,0 +1,25 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 10: KRUSKAL'S MINIMUM SPANNING TREE ALGORITHM
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter number of vertices V and edges E: Enter 5 weighted edges (u v weight):
+
+----------------------------------------------------------------------
+KRUSKAL'S MINIMUM SPANNING TREE (MST) EDGES
+----------------------------------------------------------------------
+Edge: 2 - 3 | Weight: 4
+Edge: 0 - 3 | Weight: 5
+Edge: 0 - 1 | Weight: 10
+----------------------------------------------------------------------
+Total Minimum Spanning Tree Weight = 19
+----------------------------------------------------------------------
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

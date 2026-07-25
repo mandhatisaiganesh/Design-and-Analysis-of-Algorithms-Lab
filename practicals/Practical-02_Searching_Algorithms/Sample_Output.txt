@@ -1,0 +1,23 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 02: SEARCHING ALGORITHMS BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter the number of elements: Enter 10 elements: Enter target element to search: 
+----------------------------------------------------------------------
+SEARCHING BENCHMARK RESULTS FOR TARGET = 78
+----------------------------------------------------------------------
+Algorithm         Result Index   Time (us)       Comparisons
+-----------------------------------------------------------------
+Linear Search     6              0               7
+Binary Search     6              0               4
+-----------------------------------------------------------------
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

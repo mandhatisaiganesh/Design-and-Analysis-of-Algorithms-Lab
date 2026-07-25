@@ -1,0 +1,33 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 05: 0/1 KNAPSACK DYNAMIC PROGRAMMING BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter the number of items: 3
+Enter values of 3 items: 60 100 120
+Enter weights of 3 items: 10 20 30
+Enter maximum knapsack capacity W: 50
+
+----------------------------------------------------------------------
+DP TABLE TABULATION (0/1 KNAPSACK)
+----------------------------------------------------------------------
+Item \ W     0     10    20    30    40    50
+----------------------------------------------------------------------
+  Item 0     0      0     0     0     0     0
+  Item 1     0     60    60    60    60    60
+  Item 2     0     60   100   160   160   160
+  Item 3     0     60   100   160   180   220
+
+Maximum Profit Value in Knapsack = 220
+Execution Time                  = 4 us
+
+Selected Items: [ Item 2, Item 3 ]
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

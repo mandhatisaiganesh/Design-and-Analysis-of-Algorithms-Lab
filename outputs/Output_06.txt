@@ -1,0 +1,23 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 06: MATRIX CHAIN MULTIPLICATION BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter number of matrices: 4
+Enter dimension array p of size 5: 10 30 5 60 8
+
+----------------------------------------------------------------------
+OPTIMAL MATRIX CHAIN MULTIPLICATION COST
+----------------------------------------------------------------------
+Minimum Scalar Multiplications Required: 4500
+Optimal Parenthesization Structure  : ((A(BC))D)
+Execution Time                      : 3 us
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

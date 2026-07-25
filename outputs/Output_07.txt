@@ -1,0 +1,25 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 07: COIN CHANGE PROBLEM BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter number of coin denominations: 3
+Enter 3 coin denominations: 1 2 5
+Enter target change amount: 11
+
+----------------------------------------------------------------------
+MINIMUM COINS REQUIRED
+----------------------------------------------------------------------
+Minimum coins needed to make amount 11 = 3
+Execution Time                             = 2 us
+
+Coins Selected: [ 5, 5, 1 ]
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

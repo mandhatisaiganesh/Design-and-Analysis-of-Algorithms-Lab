@@ -1,0 +1,23 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 04: FACTORIAL TIME ANALYSIS (ITERATIVE VS RECURSIVE)
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter a positive integer n: 
+----------------------------------------------------------------------
+FACTORIAL COMPUTATION RESULTS FOR N = 10
+----------------------------------------------------------------------
+Method            Result                Time (ns)       Operations
+----------------------------------------------------------------------
+Iterative         3628800               125             10
+Recursive         3628800               41              10
+----------------------------------------------------------------------
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

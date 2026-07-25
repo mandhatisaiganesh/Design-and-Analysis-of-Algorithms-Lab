@@ -1,0 +1,26 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 09: PRIM'S MINIMUM SPANNING TREE ALGORITHM
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter number of vertices V and edges E: Enter 7 weighted edges (u v weight):
+
+----------------------------------------------------------------------
+PRIM'S MINIMUM SPANNING TREE (MST) EDGES
+----------------------------------------------------------------------
+Edge: 0 - 1 | Weight: 2
+Edge: 1 - 2 | Weight: 3
+Edge: 0 - 3 | Weight: 6
+Edge: 1 - 4 | Weight: 5
+----------------------------------------------------------------------
+Total Minimum Spanning Tree Weight = 16
+----------------------------------------------------------------------
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

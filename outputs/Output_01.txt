@@ -1,0 +1,29 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 01: SORTING ALGORITHMS TIME ANALYSIS BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter the number of elements: 10
+Enter 10 elements: 64 34 25 12 22 11 90 45 78 50
+
+----------------------------------------------------------------------
+Original Array      : [ 64, 34, 25, 12, 22, 11, 90, 45, 78, 50 ]
+----------------------------------------------------------------------
+
+Algorithm         Time (us)       Comparisons       Swaps/Shifts      Sorted Output
+-------------------------------------------------------------------------------------
+Bubble Sort       0               39                20                  : [ 11, 12, 22, 25, 34, 45, 50, 64, 78, 90 ]
+Selection Sort    0               45                6                   : [ 11, 12, 22, 25, 34, 45, 50, 64, 78, 90 ]
+Insertion Sort    0               25                20                  : [ 11, 12, 22, 25, 34, 45, 50, 64, 78, 90 ]
+Merge Sort        7               21                N/A (Aux Memory)    : [ 11, 12, 22, 25, 34, 45, 50, 64, 78, 90 ]
+Quick Sort        0               26                25                  : [ 11, 12, 22, 25, 34, 45, 50, 64, 78, 90 ]
+-------------------------------------------------------------------------------------
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0

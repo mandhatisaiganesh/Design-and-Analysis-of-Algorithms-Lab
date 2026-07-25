@@ -1,0 +1,27 @@
+======================================================================
+         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
+    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
+    PRACTICAL 03: MAX HEAP SORT BENCHMARK
+======================================================================
+Student Name: Sai Ganesh Mandhati
+Roll Number : 92460118370
+======================================================================
+
+Enter the number of elements: 8
+Enter 8 elements: 12 11 13 5 6 7 9 20
+
+----------------------------------------------------------------------
+Original Array      : [ 12, 11, 13, 5, 6, 7, 9, 20 ]
+----------------------------------------------------------------------
+
+Sorted Array (Heap) : [ 5, 6, 7, 9, 11, 12, 13, 20 ]
+
+HEAP SORT PERFORMANCE METRICS
+Execution Time : 2 us
+Comparisons    : 28
+Swaps          : 15
+
+Student Name : Sai Ganesh Mandhati
+Roll Number  : 92460118370
+
+...Program finished with exit code 0
