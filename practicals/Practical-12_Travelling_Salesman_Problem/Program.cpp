@@ -1,60 +1,71 @@
-/**
- * MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
- * DAA LAB (01AI0506) - PRACTICAL 12: TRAVELLING SALESMAN PROBLEM (TSP)
- * Student Name: Sai Ganesh Mandhati | Roll Number: 92460118370
- */
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <climits>
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
-using namespace std;
+#define NUM_CITIES 6
 
-const int INF = 1e9;
+void swap(int *x, int *y) {
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
 
-int tspDP(int mask, int pos, int n, const vector<vector<int>>& dist, vector<vector<int>>& memo) {
-    if (mask == (1 << n) - 1) return dist[pos][0];
-    if (memo[mask][pos] != -1) return memo[mask][pos];
+int calculateDistance(int *route, int distances[NUM_CITIES][NUM_CITIES]) {
+    int totalDistance = 0;
+    for (int i = 0; i < NUM_CITIES; i++) {
+        totalDistance += distances[route[i]][route[(i + 1) % NUM_CITIES]];
+    }
+    return totalDistance;
+}
 
-    int ans = INF;
-    for (int city = 0; city < n; ++city) {
-        if ((mask & (1 << city)) == 0) {
-            int newCost = dist[pos][city] + tspDP(mask | (1 << city), city, n, dist, memo);
-            ans = min(ans, newCost);
+void copyArray(int *source, int *destination, int length) {
+    for (int i = 0; i < length; i++) {
+        destination[i] = source[i];
+    }
+}
+
+void permute(int *array, int start, int end, int distances[NUM_CITIES][NUM_CITIES], int *shortestRoute, int *minDistance) {
+    if (start == end) {
+        int currentDistance = calculateDistance(array, distances);
+        if (currentDistance < *minDistance) {
+            *minDistance = currentDistance;
+            copyArray(array, shortestRoute, NUM_CITIES);
+        }
+    } else {
+        for (int i = start; i < end; i++) {
+            swap((array + start), (array + i));
+            permute(array, start + 1, end, distances, shortestRoute, minDistance);
+            swap((array + start), (array + i)); // backtrack
         }
     }
-    return memo[mask][pos] = ans;
 }
 
 int main() {
-    cout << "======================================================================\n";
-    cout << "         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)\n";
-    cout << "    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)\n";
-    cout << "    PRACTICAL 12: TRAVELLING SALESMAN PROBLEM (TSP DP & BITMASKING)\n";
-    cout << "======================================================================\n";
-    cout << "Student Name: Sai Ganesh Mandhati\n";
-    cout << "Roll Number : 92460118370\n";
-    cout << "======================================================================\n\n";
-
-    int n = 4;
-    vector<vector<int>> dist = {
-        {0, 20, 42, 25},
-        {20, 0, 30, 34},
-        {42, 30, 0, 10},
-        {25, 34, 10, 0}
+    int distances[NUM_CITIES][NUM_CITIES] = {
+        {0, 2, 2, 5, 9, 3},
+        {2, 0, 4, 6, 7, 8},
+        {2, 4, 0, 8, 6, 3},
+        {5, 6, 8, 0, 4, 9},
+        {9, 7, 6, 4, 0, 10},
+        {3, 8, 3, 9, 10, 0}
     };
 
-    vector<vector<int>> memo(1 << n, vector<int>(n, -1));
-    int minCost = tspDP(1, 0, n, dist, memo);
+    int route[NUM_CITIES], shortestRoute[NUM_CITIES];
+    for (int i = 0; i < NUM_CITIES; i++) {
+        route[i] = i;
+    }
 
-    cout << "----------------------------------------------------------------------\n";
-    cout << "TRAVELLING SALESMAN PROBLEM OPTIMAL TOUR COST\n";
-    cout << "----------------------------------------------------------------------\n";
-    cout << "Minimum Cost to Visit All Cities and Return to Start = " << minCost << "\n";
-    cout << "----------------------------------------------------------------------\n";
+    int minDistance = INT_MAX;
+    permute(route, 0, NUM_CITIES, distances, shortestRoute, &minDistance);
 
-    cout << "\nStudent Name : Sai Ganesh Mandhati\n";
-    cout << "Roll Number  : 92460118370\n";
-    cout << "\n...Program finished with exit code 0\n";
+    printf("Shortest Route: ");
+    for (int i = 0; i < NUM_CITIES; i++) {
+        printf("%d ", shortestRoute[i]);
+    }
+    // Ensure to print the return to the starting city for completeness
+    printf("%d", shortestRoute[0]);
+    printf("\nTotal Distance: %d\n", minDistance);
+
     return 0;
 }
+
