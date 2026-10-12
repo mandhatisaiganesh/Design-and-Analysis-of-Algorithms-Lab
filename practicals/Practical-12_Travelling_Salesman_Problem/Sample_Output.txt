@@ -1,19 +1,2 @@
-======================================================================
-         MARWADI UNIVERSITY - DEPARTMENT OF CE (AI & ML)
-    DESIGN AND ANALYSIS OF ALGORITHMS LABORATORY (01AI0506)
-    PRACTICAL 12: TRAVELLING SALESMAN PROBLEM (TSP DP & BITMASKING)
-======================================================================
-Student Name: Sai Ganesh Mandhati
-Roll Number : 92460118370
-======================================================================
-
-----------------------------------------------------------------------
-TRAVELLING SALESMAN PROBLEM OPTIMAL TOUR COST
-----------------------------------------------------------------------
-Minimum Cost to Visit All Cities and Return to Start = 85
-----------------------------------------------------------------------
-
-Student Name : Sai Ganesh Mandhati
-Roll Number  : 92460118370
-
-...Program finished with exit code 0
+Shortest Route: 0 1 3 4 2 5 0
+Total Distance: 24
